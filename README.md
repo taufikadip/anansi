@@ -1,4 +1,4 @@
-git remote add upstream https://github.com/khalidalhabibie/victoria
+git remote add upstream https://github.com/khalidalhabibie/anansi
 
 git fetch upstream
 
