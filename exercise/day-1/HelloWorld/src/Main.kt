@@ -15,19 +15,19 @@ fun main() {
 //
 //// Outputs "Thursday" (day 4)
 
-    var salary = 100000.0F
-    var yearWork = 6
-    var Bonus: Float
-
-    if (yearWork > 5) {
-        Bonus = salary * 0.2F
-    } else if ( yearWork > 2 || yearWork < 5) {
-        Bonus = salary * 0.1F
-    } else {
-        Bonus = 0.0F
-    }
-
-    println(Bonus)
+//    var salary = 100000.0F
+//    var yearWork = 6
+//    var Bonus: Float
+//
+//    if (yearWork > 5) {
+//        Bonus = salary * 0.2F
+//    } else if ( yearWork > 2 || yearWork < 5) {
+//        Bonus = salary * 0.1F
+//    } else {
+//        Bonus = 0.0F
+//    }
+//
+//    println(Bonus)
 
 //    var totalAmount = 100F
 //    var finalPrice: Float
@@ -47,4 +47,8 @@ fun main() {
 //    }
 //
 //    println(finalPrice)
+
+    var unit = 300f
+    var
+
 }
