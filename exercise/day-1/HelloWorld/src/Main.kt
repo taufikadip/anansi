@@ -1,49 +1,50 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-//    val name = "Kotlin"
-//    var world = "World"
-//    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-//    // to see how IntelliJ IDEA suggests fixing it.
-//    println("Hello, " + world + "!")
+//    val grades = 90
 //
-//    for (i in 1..5) {
-//        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-//        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-//        println("i = $i")
+//    if (grades >= 90) {
+//        println("A")
+//    } else if (grades >= 80) {
+//        println("B")
+//    } else if (grades >= 70) {
+//        println("C")
+//    } else if (grades >= 60) {
+//        println("D")
+//    } else {
+//        println("F")
 //    }
+//
+//// Outputs "Thursday" (day 4)
 
-    val day = 12
+    var salary = 100000.0F
+    var yearWork = 6
+    var Bonus: Float
 
-    val result = when (day) {
-        1 -> "Monday"
-        2 -> "Tuesday"
-        3 -> "Wednesday"
-        4 -> "Thursday"
-        5 -> "Friday"
-        6 -> "Saturday"
-        7 -> "Sunday"
-        else -> "Invalid day."
+    if (yearWork > 5) {
+        Bonus = salary * 0.2F
+    } else if ( yearWork > 2 || yearWork < 5) {
+        Bonus = salary * 0.1F
+    } else {
+        Bonus = 0.0F
     }
-    println(result) // Outputs "Thursday" (day 4)
 
-    var name = "John"      // String (text)
-    val birthyear = 1975   // Int (number)
+    println(Bonus)
 
-    println(name)          // Print the value of name
-    println(birthyear)     // Print the value of birthyear
-
-    var x = 10
-    x += 5
-
-    println(x)
-
-    var txt = "Hello World"
-    println(txt[0]) // first element (H)
-    println(txt[2]) // third element (l)
-
-    println('string')
-    List<User> user = new ArrayList<>()
-    user.add
-
+//    var totalAmount = 100F
+//    var finalPrice: Float
+//    var discountPrice: Float
+//
+//    if (totalAmount >= 200) {
+//        discountPrice = totalAmount * 0.3F
+//        finalPrice = totalAmount - discountPrice
+//    } else if (totalAmount > 100 || totalAmount < 200) {
+//        discountPrice = totalAmount * 0.2F
+//        finalPrice = totalAmount - discountPrice
+//    } else if (totalAmount < 100 || totalAmount > 50) {
+//        discountPrice = totalAmount * 0.1F
+//        finalPrice = totalAmount - discountPrice
+//    } else {
+//        finalPrice = totalAmount
+//    }
+//
+//    println(finalPrice)
 }
