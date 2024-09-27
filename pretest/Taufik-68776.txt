@@ -1,0 +1,66 @@
+Multiple Choice
+1. C
+2. C
+3. B
+4. B
+5. D
+
+True/False
+1. False
+2. True
+3. False
+4. True
+5. True
+
+Short Answer
+1. - Readability, code kotlin, lebih mudah dibaca dibandingkan java
+    - Null-safe, kotlin mengantisipasi error Null Safe yang terjadi di java
+    - Interoperability, kotlin dapat menjalankan java command and java libraries
+
+2. val adalah variabel yang immutable (tidak bisa diubah)
+    sedangkan var adalah variabel yang mutable.
+
+3. pada kotlin terdapat variabel yang bisa memuat null(nullable references),
+    dan dapat dicek kondisinya menggunakan elvis operator
+
+4. when merupakan kontrol percabangan yang ada di kotlin
+
+5.
+
+6. menggunakan command yang lebih singkat, yaitu dengan fun
+
+7.
+
+8. Model-View-ViewModel,
+    key componentnya adalah : Repositories, Entity, ViewModel, Service & ServiceImplements
+
+9.
+10.
+
+11. karena kotlin support dengan high-order function, termasuk lambda
+
+12. For Loops pada kotlin lebih mudah dibaca karena
+    memiliki syntax yang lebih mudah dibaca dan tidak mewajibkan semicolon
+
+13.
+
+14. Enkapsulasi adalah metode kelas yang menggunakan Setter dan
+    Getter untuk mengakses dan mengambil kelas.
+
+15.
+
+16. Repository digunakan untuk mengirimkan data untuk dikirim ke ViewModel.
+
+17. - Interoperability, kotlin dapat menjalankan java command and java libraries
+    - Readability, code kotlin, lebih mudah dibaca dibandingkan java
+    - Null-safe, kotlin mengantisipasi error Null Safe yang terjadi di java
+
+18. startKoin : Create and register KoinApplication instance.
+    modules : Declare used modules.
+    androidContext : Use given Android context.
+    by inject() : allows to retrieve instances lazily.
+    get() : function to retrieve directly an instance (non lazy).
+
+19.
+
+20. Menggunakan null-safety variabel
