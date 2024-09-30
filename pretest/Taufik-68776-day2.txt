@@ -1,0 +1,88 @@
+1. a
+2. b
+3. c
+4. b
+5. c
+
+6. var mutable, val immutable
+7. var number = listOf(2, 3, 4)
+8. if (x < 5) {
+    x++
+    } else {
+        printin(x)
+    }
+9. menggunakan elvis operator ?:
+    atau berikan ? setelah tipe data variabel (name: String? = "..")
+10.
+11. menuliskan "class" sebelum nama kelas (ex: class Animal {})
+12. for ( x in array )
+13. menyocokan kondisi yang sesuai seperti switch case
+14. bisa menggunakan fungsi modulus
+    contoh: if (number % 2 == 0) { print("even") }
+15. contoh : var fruits = arrayof('banana', 'apple')
+
+16. No
+17. Yes
+18. No
+19. Yes
+20. Yes
+
+21. var x = "Hello"
+    x = "World"
+
+22. fun sum(a: Int, b: Int): Int {
+        return a + b
+        }
+    sum(5, 10)
+
+23. val myList = mutableListOf(1, 2, 3)
+    myList.add(4)
+
+24. val name: String? = null
+
+25. if (x > 5) {
+        println("x is greater than 5")
+    }
+
+26. when (x) {
+        1 -> println("One")
+        2 -> println("Two")
+        else -> println("Other")
+    }
+
+27. fun greet() {
+        println("Hello, " + $name)
+    }
+
+28. val myVar = 10
+    val result = myVar + 5
+
+29. val numbers = arrayOf(1, 2, 3)
+    println(numbers[2])
+
+30. class Person(val name: String, val age: Int) {
+        fun greet() {
+            print("Hello, my name is " + $name + " and I'm " + $age)
+        }
+    }
+
+Story-based answers
+
+val availableSeats = arrayOf(1, 2, 3, 4, 5)
+
+fun reserveSeat(name: String, seatNumber: Int) {
+    val seatIndex = seatNumber - 1
+
+    if (availableSeats[seatIndex] != 0) {
+        availableSeats[seatIndex] = 0  // Mark the seat as reserved by setting it to 0
+        println("$name reserved seat $seatNumber.")
+        println(availableSeats[seatIndex])
+    } else {
+        println("Seat $seatNumber is already reserved.")
+    }
+}
+
+fun main() {
+    reserveSeat("John", 2)
+    reserveSeat("Sarah", 2)
+}
