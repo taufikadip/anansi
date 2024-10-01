@@ -1,0 +1,45 @@
+1. b
+2. b
+3. d
+4. b
+5. c
+
+6. mutableListOf() dapat dimodifikasi nilainya
+    sedangkan listOf() tidak dapat dimodifikasi
+7. onStop() digunakan ketika tampilan tidak lagi digunakan, atau tercover oleh tampilan lain
+    onDestroy() digunakan ketika aplikasi telah ditutup
+8. Coroutine lebih ringan untuk kotlin dibandingkan thread dan managed by Kotlin runtime
+9. menggunakan onSaveInstanceState() dan
+    me restore kembali menggunakan onCreate() atau onRestoreInstanceState()
+    dan gunakan onStop() atau onDestroy() untuk menutup heavy resource
+10. View adalah UI elemen yang ada di layar
+    ViewGroup adaalah containers yang menyimpan view
+11. RecyclerView digunakan untuk menampilkan List secara efisien
+12. onResume() digunakan ketika system berinteraksi dengan user
+13. launch digunakan untuk meluncurkan coroutine baru
+14. LiveData digunakan untuk membaca changes yang ada pada UI
+15. ViewModel menangani UI-related data termausk livedata.
+
+16. No
+17. Yes
+18. No
+19. Yes
+20. Yes
+
+21. val myList = mutableListOf(1, 2, 3)
+    myList.add(4)
+
+22. fun myCoroutine() {
+        delay(1000L)
+        println("Coroutine executed")
+    }
+
+23. override fun onCreate(SavedIntanceState: Bundle) {
+        super.onCreate(SavedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+24. val map = mutableMapOf(1 to "One", 2 to "Two")
+    map[3] = "Three"
+
+25. 

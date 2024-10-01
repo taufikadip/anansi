@@ -56,6 +56,7 @@ fun reserveSeat(name: String, seatNumber: Int) {
     val seatIndex = seatNumber - 1
 
     if (availableSeats[seatIndex] != 0) {
+        println(availableSeats[seatIndex])
         availableSeats[seatIndex] = 0  // Mark the seat as reserved by setting it to 0
         println("$name reserved seat $seatNumber.")
         println(availableSeats[seatIndex])
@@ -67,6 +68,7 @@ fun reserveSeat(name: String, seatNumber: Int) {
 fun main() {
     reserveSeat("John", 2)
     reserveSeat("Sarah", 2)
+    reserveSeat("Karta", 3)
 }
 
 //fun reserveSeat(name: String, seatNumber: Int) {
