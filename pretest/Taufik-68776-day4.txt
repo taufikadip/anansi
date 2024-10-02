@@ -1,0 +1,64 @@
+1. b
+2. c
+3. a
+4. c
+5. b
+
+6. mutablelistof bisa diubah nilainya dan dimodifikasi
+7. gunakan "suspend()"
+8. untuk menghentikan sementara sistem di backgorund yang masih berjalan
+9. karena RecyclerView menampilkan banyak data dengan lebih efisien dibandngkan ListView
+10. karena Room mensederhaakan (simplifies) database operation
+11. membuat network requests dengan membuat HTTP API menjadi java interface
+12. untuk memulai menjalan aplikasi dalam lifecycle android
+13. LiveData digunakan untuk membaca changes yang ada pada UI
+14. menggunakan ViewModel menangani UI-related data termausk livedata.
+15. Coroutine lebih ringan untuk kotlin dibandingkan thread dan managed by Kotlin runtime
+
+16. yes
+17. yes
+18. yes
+19. yes
+20. no
+
+21. val myList = mutableListOf(1, 2, 3)
+        myList.add(4)
+
+22. suspend fun myFunction(GlobalScope.async) {
+        delay(1000L)
+        println("Completed")
+    }
+
+23. val map = mutableMapOf(1 to "One", 2 to "Two")
+        map[3] = "Three"
+
+24.
+
+25. val view = findViewById<Button>(R.id.myButton)
+    view.setOnClickListener {
+        Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show()
+    }
+
+26. fun add(a: Int, b: Int): Int {
+        return a + b
+    }
+
+    val result = add(5, 10)
+
+27.
+
+28. val textView = findViewById<TextView>(R.id.textView)
+    textView.text = getString(R.string.app_name)
+
+29. val job = GlobalScope.async {
+        delay(1000L)
+        "Hello"
+    }
+
+    val result = job.await()
+
+30. fun networkRequest() {
+           val url = URL("https://example.com")
+           val connection = url.openConnection() as HttpURLConnection
+           connection.setRequestMethod = "POST"
+       }
