@@ -1,0 +1,40 @@
+1. b
+2. a
+3. b
+4. b
+5. d
+
+True/False
+1. False
+2. False
+3. True
+4. False
+5. True
+
+Short Answer
+1. apply() menyimpan data secara asynchronus,
+    sedangkan commit() menyimpan data secara synchronus
+    dan mengembalikan boolean berhasil atau gagal
+
+2. menggunakan apply()
+
+3. dengan membaca boolean dari getSharedPreferences
+
+4. Shared Preferences lebih ringan untuk menyimpan data sederhana
+
+5. Bisa, shared preferences dapat berjalan dalam multiple thread
+    menggunakan apply() dan commit()
+
+Code Fix
+1. val sharedPref = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+   val editor = sharedPref.edit()
+   editor.putString("username", "JohnDoe")
+   editor.apply()
+
+2. val sharedPref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+   val username = sharedPref.getString("username", "defaultName")
+
+3. val editor = sharedPref.edit()
+   editor.remove("key")
+   editor.commit()
+

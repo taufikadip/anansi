@@ -1,0 +1,50 @@
+1. b
+2. b
+3. b
+4. c
+5. a
+
+True/False
+1. True
+2. False
+3. True
+4. False
+5. False
+
+Short Answer
+1. GsonConverterFactory digunakan untuk mengonversi data JSON
+    yang diterima menjadi objek java/kotlin.
+
+2.
+
+3. Synchronus API calls menunggu respons dan memblokir thread
+    saat menunggu, sedangkan asynchronus API calls tidak
+    memblokir thread dan memberikan callback untuk menampung respons
+
+4.
+
+5. Retrofit memiliki callback onFailure() untuk menangani network error,
+    jika respons mengandung kode error maka dapat diperiksa dengan
+    response.isSuccessful dan memproses pesan error dengan response.errorBody()
+
+Code Fix
+1. @GET("users")
+   fun getUsers(): Call<List<User>>
+
+2. @POST("login")
+   fun loginUser(@Body credentials: Map<String, String>): Call<LoginResponse>
+   val credentials = mapOf("username" to "username", "password" to "password")
+   val response = loginUser(credentials)
+
+3. @GET("user/{id}")
+   fun getUserById(@Path("id") userId: Int): Call<User>
+   getUserById(123).enqueue(object : Callback<user> {
+
+   override fun onResponse(call: Call<user>, response: Response<user>) {
+   }
+
+   override fun onFailure(call: Call<user>, t: Throwable){
+   }
+
+   }
+   )

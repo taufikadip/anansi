@@ -1,0 +1,39 @@
+1. c
+2. c
+3. a
+4. b
+5. b
+
+True/False
+1. False
+2. True
+3. True
+4. True
+5. False
+
+Short Answer
+1. MediaPlayer digunakan untuk memutar file video dan audio
+
+2. Menggunakan VideoView di layout dan detVideoURI()
+    dan gunakan start() untuk play video
+
+3. Menggunakan Intent.ACTION_IMAGE_CAPTURE dan panggil
+    startActivityForResult() untuk memulai kamera dan
+    hasilnya dikembalikan ke method onActivityResult()
+
+4. RECORD_AUDIO permission
+
+5. Menggunakan MediaPlayer dan menggunakan start()
+
+Code Fix
+1. val mediaPlayer = MediaPlayer()
+   mediaPlayer.setDataSource("audio.mp3")
+   mediaPlayer.prepare()
+   mediaPlayer.start()
+
+2. val videoView: VideoView = findViewById(R.id.videoView)
+   videoView.setVideoPath("video.mp4")
+   videoView.start()
+
+3. val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+   startActivityForResult(intent, 1)
