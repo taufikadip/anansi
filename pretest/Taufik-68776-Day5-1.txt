@@ -16,22 +16,37 @@ Short Answer
     akan dijalankan kembali, sedangkan onStop() dijalankan ketika
     activity akan ditutup atau tidak lagi terlihat
 
-2. Create the Activities
-   Add the Activities to the app’s Manifest
-   Create an Intent referencing the Activity class you want to switch to
-   Call the startActivity(Intent) method to switch to the Activity
-   Create a back button on the new Activity and call the finish() method on an Activity when the back button is pressed
+2. // Create an explicit Intent to navigate to SecondActivity
+           val intent = Intent(this, SecondActivity::class.java)
+
+           // Put the text from the input field into the intent
+           intent.putExtra("input", input.text.toString())
+
+           // Start the second activity
+           startActivity(intent)
+
+   // consume intent
+       // Get the string from the intent
+       val inputText = intent.getStringExtra("input")
 
 3. untuk menyimpan data supaya tidak rusak ketika screen di rotasi
 
-4.
+4. Bila pengguna menekan tombol 'back' untuk keluar
+    ctivity akan berada pada lifecycle onPause(), onStop(),
+    and onDestroy()
 
-5.
+5. Menggunakan registerForActivityResult() or startActivityForResult() method.
 
 Code Fix
 
-1.
+1. startActivity(intent)
+    explains : Untuk menjalankan startActivity, kita harus membuat
+                Intent yang berisi intent sebagai tujuan.
 
-2.
+2. override fun onCreate(savedInstanceState: Bundle) {
+       super.onCreate(savedInstanceState)
+   }
 
-3.
+3. override fun onDestroy() {
+       super.onDestroy()
+   }
