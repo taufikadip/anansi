@@ -1,0 +1,37 @@
+1. d
+2. b
+3. a
+4. c
+5. b
+
+True/False
+1. False
+2. True
+3. False
+4. True
+5. False
+
+Short Answer
+1. onPause() dijalankan ketika activity berada di foreground atau
+    akan dijalankan kembali, sedangkan onStop() dijalankan ketika
+    activity akan ditutup atau tidak lagi terlihat
+
+2. Create the Activities
+   Add the Activities to the app’s Manifest
+   Create an Intent referencing the Activity class you want to switch to
+   Call the startActivity(Intent) method to switch to the Activity
+   Create a back button on the new Activity and call the finish() method on an Activity when the back button is pressed
+
+3. untuk menyimpan data supaya tidak rusak ketika screen di rotasi
+
+4.
+
+5.
+
+Code Fix
+
+1.
+
+2.
+
+3.
