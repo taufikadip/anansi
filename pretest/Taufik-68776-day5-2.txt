@@ -1,0 +1,44 @@
+1. a
+2. b
+3. b
+4. b
+5. b
+
+True/False
+1. True
+2. True
+3. False
+4. True
+5. False
+
+Short Answer
+1. Menampilan scrollable list of data
+2. Menambahkan button in xml
+3. ConstraintLayout dapat membuat layout yang lebih fleksibel
+    dibandingkan LinearLayout yang menampilkan kedalam list vertikal/horizontal
+4. Menggunakan ProgressBar
+5. Untuk membuat pilihan yang bisa dipilih lebih dari satu
+
+Code Fix
+1. <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/image"
+       android:text="Click me!" />
+
+2. <Button
+       android:id="@+id/button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Press Me" />
+
+       explain : hilangkan onclick
+
+3. <RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+       explain : menggunakan match_parent supaya recycler view
+                 fill dalam screen
